@@ -22,6 +22,27 @@
     background-color: #525252;
 }
 
+/* ------------------General Paddings/Margins/Text */
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-sub {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+}
+
+.inline-block {
+    display:inline-block
+}
+
 /* ------------------Heading */
 header {
     margin: 0;
@@ -94,8 +115,10 @@ header {
     color: #fafafa;
     font-size: 26px;
 }
+
 .menuitem a:hover {
-    text-decoration: none; /* Remove underlining on hover */
+    text-decoration: none;
+    /* Remove underlining on hover */
 }
 
 
@@ -115,5 +138,28 @@ header {
     background-color: rgba(0, 0, 0, 0.2) !important;
     /* Set the solid background color with !important */
     height: 120px;
-   
+
+}
+
+/* ------------------Footer */
+
+footer {
+    background-color: #525252;
+    color: #fafafa;
+    min-height: 120px;
+    margin: 0;
+}
+
+.cv-pdf i {
+font-size: 18px; 
+color: #fafafa;
+text-align: center;
+padding-left: 5px;
+transition: all 0.35s ease-in-out;
+-moz-transition: all 0.35s ease-in-out;
+-webkit-transition: all 0.35s ease-in-out;
+-o-transition: all 0.35s ease-in-out;
+}
+.cv-pdf i:hover {
+    color: #e84610;
 }
