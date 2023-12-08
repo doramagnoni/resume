@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
+
 /* ------------------Colors */
 .bg-color-name-title {
     background-color: #676767;
@@ -93,6 +94,10 @@ header {
     color: #fafafa;
     font-size: 26px;
 }
+.menuitem a:hover {
+    text-decoration: none; /* Remove underlining on hover */
+}
+
 
 .menuitem span {
     display: block;
@@ -110,4 +115,5 @@ header {
     background-color: rgba(0, 0, 0, 0.2) !important;
     /* Set the solid background color with !important */
     height: 120px;
+   
 }
