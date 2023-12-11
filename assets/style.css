@@ -11,7 +11,7 @@
 }
 
 .ui-menu-color-resume {
-    background-color:#175E29;
+    background-color:#8A466C;
 }
 
 .ui-menu-color-contact {
@@ -20,6 +20,10 @@
 
 .ui-menu-color-download {
     background-color: #444839;
+}
+
+.bg-color-three-reasons {
+    background-color: #F1F1E6;
 }
 
 /* ------------------General Paddings/Margins/Text */
@@ -43,6 +47,23 @@ h4 {
 .inline-block {
     display: inline-block
 }
+
+.row-table {
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
 
 /* ------------------Heading */
 header {
