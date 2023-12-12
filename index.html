@@ -68,7 +68,46 @@
     </header>
 
     <section class="container-fluid">
-        <div class="row row-table">
+        <div class="row">
+            <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="section-heading uppercase"> What inspires me?</h3>
+                        <p>I find inspiration in tackling complex problems and finding innovative solutions. Whether
+                            it's exploring new technologies, collaborating with creative minds, or pushing the
+                            boundaries of what's possible, I am driven by a passion for continuous learning and growth.
+                        </p>
+                        <!-- Submit a Question Form -->
+                        <form action="#" method="post" class="question-form" onsubmit="return validateForm()">
+                            <label for="question">Submit a Question:</label>
+                            <input type="text" id="question" name="question" placeholder="Ask me anything..." required>
+                            <button type="submit">Submit</button>
+                        </form>
+                        <p id="confirmation-message" style="display: none; color: green;">Question submitted successfully!</p>
+                        <p id="error-message" style="display: none; color: red;">Please enter a question before submitting.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <script>
+                function validateForm() {
+                    var questionInput = document.getElementById('question').value;
+                    var confirmationMessage = document.getElementById('confirmation-message');
+                    var errorMessage = document.getElementById('error-message');
+            
+                    if (questionInput.trim() === '') {
+                        errorMessage.style.display = 'block';
+                        confirmationMessage.style.display = 'none';
+                        return false;
+                    } else {
+                        errorMessage.style.display = 'none';
+                        confirmationMessage.style.display = 'block';
+                        // You can add code here to handle the form submission or redirect if needed.
+                        return true;
+                    }
+                }
+            </script>
+
             <div class="col bg-color-three-reasons section-column">
                 <div class="row">
                     <div class="col">
@@ -88,6 +127,7 @@
                                     through clean and efficient code.</p>
 
                             </div>
+
                         </div>
 
                     </div>
@@ -99,7 +139,7 @@
                             <div class="col-10">
                                 <h4 class="three-reasons-heading uppercase">How do I do it?</h4>
                                 <p>With a solid foundation in front-end and
-                                    back-end technologies like JavaScript, React, and Node.js, I enjoy crafting
+                                    back-end technologies like JavaScript, Python, React, and Node.js, I enjoy crafting
                                     user-friendly solutions. Let's create something amazing together!</p>
 
                             </div>
@@ -113,7 +153,10 @@
                             </div>
                             <div class="col-10">
                                 <h4 class="three-reasons-heading uppercase">Why hiring me?</h4>
-                                <p>Hiring me means gaining a Full Stack Developer with a passion for efficiency and a commitment to staying at the forefront of technology. My versatile skill set, coupled with a dedication to simplicity and quality, ensures impactful and up-to-date solutions for your projects. Let's achieve success together!</p>
+                                <p>Hiring me means gaining a Full Stack Developer with a passion for efficiency and a
+                                    commitment to staying at the forefront of technology. My versatile skill set,
+                                    coupled with a dedication to simplicity and quality, ensures impactful and
+                                    up-to-date solutions for your projects. Let's achieve success together!</p>
 
 
 
@@ -123,10 +166,7 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
-
     </section>
 
     <footer class="container-fluid">
