@@ -7,19 +7,19 @@
 }
 
 .ui-menu-color-home {
-    background-color: #415D00;
+    background-color: #304C00;
 }
 
 .ui-menu-color-resume {
-    background-color:#8A466C;
+    background-color:  #415D00;
 }
 
 .ui-menu-color-contact {
-    background-color: #006673;
+    background-color: #627D26;
 }
 
 .ui-menu-color-download {
-    background-color: #444839;
+    background-color: #839E46;
 }
 
 .bg-color-three-reasons {
@@ -224,4 +224,9 @@ footer {
 
 .three-reasons-heading {
 margin-bottom: 15px;
+}
+
+/* ------------------Personal Info */
+.personal-info {
+    background-color:  #F1F1E6;
 }
