@@ -69,7 +69,7 @@
 
     <section class="container-fluid">
         <div class="row">
-            <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6 personal-info section-column">
+            <div class="col-md-4 bg-color-personal-info section-column">
                 <div class="row">
                     <div class="col-12">
                         <h3 class="section-heading uppercase"> What inspires me?</h3>
@@ -77,20 +77,26 @@
                             it's exploring new technologies, collaborating with creative minds, or pushing the
                             boundaries of what's possible, I am driven by a passion for continuous learning and growth.
                         </p>
-
-
-                        <!-- Submit a Question Form -->
-                        <form action="http://localhost:3000/submit-question" method="post" class="question-form" onsubmit="return validateForm()">
-                            <label for="question">Submit a Question:</label>
-                            <input type="text" id="question" name="question" placeholder="Ask me anything..." required>
-                            <button type="submit">Submit</button>
-                        </form>
-                        <p id="confirmation-message" style="display: none; color: green;">Question submitted successfully!</p>
-                        <p id="error-message" style="display: none; color: red;">Please enter a question before submitting.</p>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">Name:</p>
+                    </div>
+                    <div class="value">
+                        <p>Dora Olsen</p>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">Email:</p>
+                    </div>
+                    <div class="value">
+                        <p>	dora.fullstack.olsen@gmail.com</p>
                     </div>
                 </div>
             </div>
-            
+
             <div class="col bg-color-three-reasons section-column">
                 <div class="row">
                     <div class="col">
@@ -207,6 +213,7 @@
 
     </footer>
 </body>
+
 
 
 </html>
